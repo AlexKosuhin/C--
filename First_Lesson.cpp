@@ -1,8 +1,22 @@
 #include <iostream>
-using namespace std;
+#include <string>
+#include <ctime>
 
 int main(){
-    cout <<"Hello, World!";
+    std::string name;
+    int day;
+    int month;
+    int year;
+
+    std::cin >> name;
+    std::cin >> day;
+    std::cin >> month;
+    std::cin >> year;
+
+    std::cout << name;
+    std::cout << day;
+
+    
     return 0;
 
 }
