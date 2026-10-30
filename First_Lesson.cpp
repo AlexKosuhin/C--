@@ -1,22 +1,21 @@
 #include <iostream>
 #include <string>
-#include <ctime>
+#include <windows.h>
 
-int main(){
+int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
     std::string name;
-    int day;
-    int month;
-    int year;
+    int day, month, year;
+    char sep1, sep2;
 
+    std::cout << "Введите своё имя: ";
     std::cin >> name;
-    std::cin >> day;
-    std::cin >> month;
-    std::cin >> year;
+    std::cout << "Привет, " << name <<"!\n";
+    std::cout << "Введи свой день рождения в формате (ДД-ММ-ГГГГ): \n";
+    std::cin >> day >> sep1 >> month >> sep2 >> year;
 
-    std::cout << name;
-    std::cout << day;
 
-    
     return 0;
-
 }
